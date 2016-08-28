@@ -1,0 +1,30 @@
+{
+    "name": "solodkiy/composer-monorepo-helper",
+    "type": "composer-plugin",
+    "description": "simplifies work with path repositories",
+    "keywords": ["monorepo", "compoeser"],
+    "require": {
+        "php": ">=5.4",
+        "version/version": "~2.2",
+        "composer-plugin-api": "^1.0"
+    },
+    "require-dev": {
+        "composer/composer": "~1.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Solodkiy",
+            "email": "work@x1.by"
+        }
+    ],
+    "extra": {
+        "class": "Solodkiy\\ComposerMonorepoHelper\\MonorepoHelperPlugin",
+        "checksum": "4daf8a83f97e60bceb3fbf2c99f502c4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Solodkiy\\ComposerMonorepoHelper\\": "src"
+        }
+    }
+}
